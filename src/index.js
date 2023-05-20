@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded',function(){
                 }  
         setInterval(autoShowSlide,4000);
                 navIcon.onclick = ()=> {
-                        navIcon.style.display = 'none';
+                        navIcon.style.opacity = 0;
                         navbarModal.classList.add('showNavBar');
                 }
 
                 navClose.onclick = ()=> {
-                        navIcon.style.display = 'block';
+                        navIcon.style.opacity = 1;
                         navbarModal.classList.remove('showNavBar');
                 }
         

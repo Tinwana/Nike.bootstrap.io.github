@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/*
+./assets/css/components/*
+./assets/css/bootstrap.css
+./assets/css/bootstrap.css.map

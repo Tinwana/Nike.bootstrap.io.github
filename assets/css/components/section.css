@@ -1,3 +1,85 @@
+.pegasus__img {
+  position: relative;
+  cursor: pointer;
+}
+.pegasus__img .pegasus__btn {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
 
+.sale__shoe .pegasus__image {
+  position: relative;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.sale__shoe .pegasus__image > img {
+  width: 100%;
+}
+
+.sale__shoe .btn__des {
+  position: absolute;
+  bottom: 6%;
+  left: 6%;
+}
+
+.sale__shoe .btn__des:hover {
+  background-color: #e5e5e5;
+}
+
+.description--price {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1.5;
+  flex: 1 0 0;
+}
+
+.sale__shoe p:nth-child(2) {
+  color: #827575;
+  font-size: 1rem;
+}
+
+.sale__shoe .access:first-child {
+  color: #ad8375;
+}
+
+.pegasus__images {
+  overflow-y: hidden !important;
+}
+
+.pegasus__images::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+.pegasus__images::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.pegasus__images::-webkit-scrollbar-thumb {
+  background: rgb(134, 134, 134);
+  border-radius: 10px;
+}
+
+.trending__content {
+  position: relative;
+}
+.trending__content p {
+  margin: 0.5rem;
+}
+.trending__content .content__text {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+}
 
 /*# sourceMappingURL=section.css.map */

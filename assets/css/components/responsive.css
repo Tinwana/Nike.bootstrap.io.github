@@ -37,5 +37,13 @@
     cursor: pointer;
   }
 }
+@media (max-width: 950px) {
+  .pegasus__images {
+    display: none !important;
+  }
+  .carousel {
+    display: block !important;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

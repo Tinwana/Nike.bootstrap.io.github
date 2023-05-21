@@ -1,0 +1,80 @@
+footer{
+    height: auto;
+    .goods__list{
+        ul{
+            li:hover a{
+                color: #111 !important;
+            }
+            >li:first-child a{
+                cursor:default;
+            }
+        }
+        &:hover .list__effect{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .list__effect{
+            transform: translateY(-60%);
+            opacity: 0;
+            transition: .2s linear;
+        }
+    }
+    .footer__info{
+        padding: 3rem 0;
+        background-color: #111111;
+        .footer__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer__info--text{
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+                line-height: 2.4;
+                ul{
+                    li{
+                        cursor: pointer;
+                    }
+                    &:first-child{
+                        font-size: .8rem;
+                    }
+                    & li:first-child{
+                        font-size: .8rem;
+                    }
+                    &:not(:first-child) li:not(:first-child){
+                        font-size: .8rem;
+                        font-weight: lighter;
+                        &:hover{
+                            opacity: 1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__info--icons{
+        position: relative;
+        top: -70px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        i::before{
+            font-size: 1.2rem;
+           }
+        .icon--border{
+            width: 35px;
+            height: 35px;
+            color: #111111;
+            border-radius: 100%;
+            padding: 5px;
+            background-color: #7e7e7e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background-color: #ffffff;
+            }
+          }
+      }
+}

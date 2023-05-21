@@ -36,6 +36,17 @@
     display: block !important;
     cursor: pointer;
   }
+  .goods__list {
+    flex-direction: column;
+  }
+  .footer__content {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 8rem;
+  }
+  .footer__content .footer__info--text ul:not(:first-child) {
+    display: none;
+  }
 }
 @media (max-width: 950px) {
   .pegasus__images {

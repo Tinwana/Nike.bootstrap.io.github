@@ -1,7 +1,7 @@
 function rand (num) {
     return Math.floor(Math.random()*num);
 }
-const headerImg = ["http://127.0.0.1:5500/img/nike-man.webp","https://c4.wallpaperflare.com/wallpaper/22/55/717/sport-running-nike-run-wallpaper-preview.jpg","https://i.pinimg.com/originals/e6/c0/f2/e6c0f2659987c8b796e965a1721653c1.jpg","https://static.nike.com/a/images/w_1920,c_limit/a775a4df-d252-4fcd-a951-ce20ebfee3ac/what-to-wear-for-cold-weather-running.jpg"]
+const headerImg = ["./img/nike-man.webp","https://c4.wallpaperflare.com/wallpaper/22/55/717/sport-running-nike-run-wallpaper-preview.jpg","https://i.pinimg.com/originals/e6/c0/f2/e6c0f2659987c8b796e965a1721653c1.jpg","https://static.nike.com/a/images/w_1920,c_limit/a775a4df-d252-4fcd-a951-ce20ebfee3ac/what-to-wear-for-cold-weather-running.jpg"]
 const homePageHTML =
  `<header class="mb-5">
  <div class="navbar__modal h-100">
@@ -26,7 +26,7 @@ const homePageHTML =
                  <a href="" class="link-dark text-decoration-none fs-4 py-1">Sale</a>
              </li>
              <li class="list-unstyled d-flex flex-column">
-                 <a href="" class="link-dark text-decoration-none fs-4 py-1">SNKRS</a>
+                 <a href="./assets/html/SKRN.html" class="link-dark text-decoration-none fs-4 py-1">SNKRS</a>
              </li>
          </ul>
          <p class="fs-5 text-secondary mb-4">Become a Nike Member for the best products, inspiration and stories in sport. <a href="" class="link-dark">Learn more</a></p>
@@ -75,7 +75,7 @@ const homePageHTML =
                  <a href="" class="link-dark text-decoration-none">Sale</a>
              </li>
              <li class="list-unstyled d-flex flex-column">
-                 <a href="" class="link-dark text-decoration-none">SNKRS</a>
+                 <a href="./assets/html/SKRN.html" class="link-dark text-decoration-none">SNKRS</a>
              </li>
          </ul>
      </div>
@@ -500,4 +500,4 @@ const homePageHTML =
  </div>
 </div>
 </footer>`
-document.getElementById('root').innerHTML = homePageHTML;
+document.getElementById('homePage').innerHTML = homePageHTML;

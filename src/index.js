@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded',function(){
     const autoSlide = document.querySelectorAll('.slide-text__content');
     let boolBtn = false;
     const navbarModal = document.querySelector('.navbar__modal');
-    const navIcon = document.querySelector('.navbar__search .feature__icon i');
-    const navClose = document.querySelector('.navbar__modal .modal__close i');
+    const navIcon = document.querySelector('.feature__icon i');
+    const navClose = document.querySelector('.modal__close i');
         function autoShowSlide(){
                 var i; 
                 for (i = 0; i< autoSlide.length;i++) {

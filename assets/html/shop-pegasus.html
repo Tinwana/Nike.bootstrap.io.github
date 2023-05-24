@@ -113,10 +113,19 @@
         </header>
         <main class="container-fluid my-5">
         <div class="d-flex justify-content-between">
-            <p class="fs-4 d-lg-block d-none">Pegasus 40th Anniversary (27)</p>
+            <p class="fs-4 d-lg-block d-none mb-5">Pegasus 40th Anniversary (27)</p>
             <ul class="d-flex gap-4">
-                <li class="list-unstyled">Show Filters <i class="fa-sharp fa-solid fa-caret-down"></i></li>
-                <li class="list-unstyled">Sort by <i class="fa-sharp fa-solid fa-caret-down"></i></li>
+                <li class="list-unstyled">Show Filters <i class="fa-sharp fa-solid fa-caret-down dropdown__icon-filter position-relative cursor-pointer"></i>
+                    <ul class="d-flex flex-column align-items-start p-0 position-absolute dropdown__filter">
+                        <li class="list-unstyled w-100 pe-1 cursor-pointer">Slogan</li>
+                        <li class="list-unstyled w-100 pe-1 cursor-pointer">Brand name</li>
+                    </ul>
+                </li>
+                <li class="list-unstyled">Sort by <i class="fa-sharp fa-solid fa-caret-down dropdown__icon-sort position-relative cursor-pointer"></i>
+                    <ul class="d-flex flex-column align-items-start p-0 position-absolute dropdown__sort">
+                        <li class="list-unstyled w-100 pe-1 cursor-pointer">Price</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="row" id="pegasus__item"></div>

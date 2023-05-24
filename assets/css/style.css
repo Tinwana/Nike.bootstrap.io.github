@@ -10894,6 +10894,12 @@ textarea.form-control-lg {
   align-items: center;
 }
 
+.to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
+
 .pegasus__img {
   position: relative;
   cursor: pointer;

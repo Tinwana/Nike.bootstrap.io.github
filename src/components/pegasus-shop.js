@@ -162,7 +162,7 @@ handleEvent: function() {
     img.style.zIndex = "1001"
     const pegasus__imgs = [...document.querySelectorAll('.pegasus__img')];
     loadBtn.onclick = ()=> {
-        renderHTML();
+        this.renderHTML();
     }
     pegasus__imgs.forEach(pegasus__img => {
         pegasus__img.onclick = function() {

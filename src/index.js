@@ -1,13 +1,9 @@
 document.addEventListener('DOMContentLoaded',function(){
-        
-        let boolBtn = false;
         const navbarModal = document.querySelector('.navbar__modal');
         const navIcon = document.querySelector('.feature__icon i');
         const navClose = document.querySelector('.modal__close i');
-        const dropDownFilter = document.querySelector('.dropdown__icon-filter');
-        const dropdownSort = document.querySelector('.dropdown__icon-sort');
-        const filterItem = document.querySelector('.dropdown__filter');
-        const sortItem = document.querySelector('.dropdown__sort');
+        const inputElement = document.querySelector('.search__group .search__input');
+        const inputIcon = document.querySelector('.search__group .search__icon');
    const app = {
         autoShowSlide: function (){
                 let viTriSlide = 0;
@@ -32,17 +28,14 @@ document.addEventListener('DOMContentLoaded',function(){
                         navIcon.style.opacity = 1;
                         navbarModal.classList.remove('showNavBar');
                 }
-                dropDownFilter.onclick = ()=> {
-                        filterItem.classList.toggle('show');
-
+                inputIcon.onclick = e => {
+                        
                 }
-                dropdownSort.onclick = ()=> {
-                        sortItem.classList.toggle('show');
-
-                }
+                
+                
         },
         start: function() {
-                setInterval(app.autoShowSlide,4000);
+                setInterval(app.autoShowSlide,2000);
                 app.handleEvent();
         }
                 

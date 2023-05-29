@@ -4,6 +4,11 @@ const colour = "1 Colour";
 const des = ["Just In", "Promo Exclusion"]
 const prices = ["3,829,000₫", "4,409,000₫", "4,109,000₫", "2,679,000₫", "3,519,000₫"];
 const nike = ["Nike Pegasus 40 SE", "Nike Pegasus 40", "Nike Pegasus Turbo Next Nature SE", "Nike Pegasus 40 Premium", "Nike React Pegasus Trail 4 SE", "Nike Air Zoom Pegasus 40"];
+const dropDownFilter = document.querySelector('.dropdown__icon-filter');
+const dropdownSort = document.querySelector('.dropdown__icon-sort');
+let boolBtn = false;
+    const filterItem = document.querySelector('.dropdown__filter');
+const sortItem = document.querySelector('.dropdown__sort');
 const road = ["Men's Road Running Shoes", "Women's Road Running Shoes", "Men's Trail-Running Shoes", "Older Kids' Road Running Shoes"]
 const pegasusApp = {
     imgSrc: function() {
@@ -160,10 +165,9 @@ handleEvent: function() {
     const img = document.createElement('img')
     img.className = "rounded-3"
     img.style.zIndex = "1001"
-    const pegasus__imgs = [...document.querySelectorAll('.pegasus__img')];
     loadBtn.onclick = ()=> {
         this.renderHTML();
-    }
+        const pegasus__imgs = [...document.querySelectorAll('.pegasus__img')];
     pegasus__imgs.forEach(pegasus__img => {
         pegasus__img.onclick = function() {
             img.src = pegasus__img.src;
@@ -178,7 +182,33 @@ handleEvent: function() {
                 lightBox.classList.remove("active");
     
         }
+    
     })
+    }
+    const pegasus__imgs = [...document.querySelectorAll('.pegasus__img')];
+    pegasus__imgs.forEach(pegasus__img => {
+        pegasus__img.onclick = function() {
+            img.src = pegasus__img.src;
+            lightBox.classList.add("active");
+            if(lightBox.firstChild){
+                lightBox.removeChild(this.firstChild);
+            }
+            lightBox.appendChild(img);
+        }
+        lightBox.onclick = function(e) {
+            if(e.target !== e.currentTarget) return;
+                lightBox.classList.remove("active");
+    
+        }
+    
+    })
+    dropDownFilter.onclick = ()=> {
+        filterItem.classList.toggle('show');
+
+}
+    dropdownSort.onclick = ()=> {
+        sortItem.classList.toggle('show');
+}
 },
 start: function() {
     this.renderHTML();

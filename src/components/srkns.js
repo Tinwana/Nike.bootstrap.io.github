@@ -17,7 +17,6 @@
         },
         handleEvent: function() {
             const loadBtn = document.querySelector('.load__btn');
-            const snkrsImgs = [...document.querySelectorAll(".snkrs__img")];
             const lightBox = document.createElement('div');
                 lightBox.id = "light-box"
                 document.body.append(lightBox);
@@ -28,7 +27,7 @@
                     img.style.height = "auto";
             loadBtn.onclick = ()=> {
                 this.renderSNKRSItem();
-            }
+                const snkrsImgs = [...document.querySelectorAll(".snkrs__img")];
             snkrsImgs.forEach(snkrs__img => {
                 snkrs__img.onclick = function() {
                     img.src = snkrs__img.src;
@@ -45,6 +44,25 @@
                 }
             
             })
+            }
+            const snkrsImgs = [...document.querySelectorAll(".snkrs__img")];
+            snkrsImgs.forEach(snkrs__img => {
+                snkrs__img.onclick = function() {
+                    img.src = snkrs__img.src;
+                    lightBox.classList.add("active");
+                    if(lightBox.firstChild){
+                        lightBox.removeChild(this.firstChild);
+                    }
+                    lightBox.appendChild(img);
+                }
+                lightBox.onclick = function(e) {
+                    if(e.target !== e.currentTarget) return;
+                        lightBox.classList.remove("active");
+            
+                }
+            
+            })
+            
         },
         start: function() {
             this.renderSNKRSItem();

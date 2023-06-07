@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded',function(){
         const navClose = document.querySelector('.modal__close i');
         const inputElement = document.querySelector('.search__group .search__input');
         const inputIcon = document.querySelector('.search__group .search__icon');
-   const app = {
+        let viTriSlide = 0;
+        const app = {
         autoShowSlide: function (){
-                let viTriSlide = 0;
                 const autoSlide = document.querySelectorAll('.slide-text__content');
                 var i; 
                 for (i = 0; i< autoSlide.length;i++) {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 
         },
         start: function() {
-                setInterval(app.autoShowSlide,2000);
+                setInterval(app.autoShowSlide,3000);
                 app.handleEvent();
         }
                 

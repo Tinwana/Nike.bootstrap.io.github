@@ -48,6 +48,7 @@
 }
 .pegasus__images{
     overflow-y: hidden !important;
+    scroll-behavior: smooth;
 }
 .pegasus__images::-webkit-scrollbar {
     height: 8px;
